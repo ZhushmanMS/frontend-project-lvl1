@@ -2,8 +2,9 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "Brain games. js project",
+  "type": "module",
   "main": "index.js",
-  "bin": {    
+  "bin": {
     "brain-games": "bin/brain-games.js",
     "code": "bin/brain-games.js"
   },
@@ -19,6 +20,8 @@
   "bugs": {
     "url": "https://github.com/ZhushmanMS/frontend-project-lvl1/issues"
   },
-  "type": "module",
-  "homepage": "https://github.com/ZhushmanMS/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/ZhushmanMS/frontend-project-lvl1#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
