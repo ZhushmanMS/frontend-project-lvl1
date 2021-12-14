@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import parityCheck from '../src/evenCheck.js';
+import evenCheck from '../src/games/evenCheck.js';
 
-parityCheck();
+evenCheck();
