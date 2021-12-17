@@ -1,4 +1,11 @@
-const getCorrctAnsw = (operator, x, y) => {
+const thisEven = (randInt) => {
+  if (randInt % 2 === 0) {
+    return 'yes';
+  }
+  return 'no';
+};
+
+const calc = (operator, x, y) => {
   switch (operator) {
     case '+':
       return x + y;
@@ -17,4 +24,13 @@ const getCorrctAnsw = (operator, x, y) => {
   }
 };
 
-export default getCorrctAnsw;
+const getGCD = (a, b) => {
+  if (!b) {
+    return a;
+  }
+  return getGCD(b, a % b);
+};
+
+export {
+  thisEven, calc, getGCD,
+};
