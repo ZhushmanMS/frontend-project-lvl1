@@ -1,8 +1,9 @@
 import readlineSync from 'readline-sync';
 import usrName from './cli.js';
 
+const roundСount = 3;
+
 const run = (gameRule, QA) => {
-  const roundСount = 3;
   console.log(gameRule);
   for (let i = 0; i < roundСount; i += 1) {
     const [quest, corrctAnsw] = QA();
