@@ -31,6 +31,16 @@ const getGCD = (a, b) => {
   return getGCD(b, a % b);
 };
 
+const getArr = (startInt, step, length) => {
+  const arr = [];
+  let temp = startInt;
+  for (let i = 0; i < length; i += 1) {
+    arr.push(temp);
+    temp += step;
+  }
+  return arr;
+};
+
 export {
-  thisEven, calc, getGCD,
+  thisEven, calc, getGCD, getArr,
 };
