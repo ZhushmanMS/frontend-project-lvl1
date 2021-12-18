@@ -8,7 +8,6 @@ const evenCheck = () => {
   const quest = randInt;
   const corrctAnsw = getCorrctAnsw(randInt);
   const QA = [quest, corrctAnsw];
-  console.log(QA);
   return QA;
 };
 

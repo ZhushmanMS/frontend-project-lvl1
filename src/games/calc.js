@@ -13,7 +13,6 @@ const calc = () => {
   const quest = `${maxInt} ${randOpert} ${minInt}`;
   const corrctAnsw = String(getCorrctAnsw(randOpert, maxInt, minInt));
   const QA = [quest, corrctAnsw];
-  console.log(QA);
   return QA;
 };
 

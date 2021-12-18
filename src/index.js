@@ -6,6 +6,7 @@ const run = (gameRule, QA) => {
   console.log(gameRule);
   for (let i = 0; i < roundСount; i += 1) {
     const [quest, corrctAnsw] = QA();
+    console.log(corrctAnsw);
     console.log(`Question: ${quest}`);
     const usrAnsw = readlineSync.question('Your answer: ');
     if (usrAnsw === corrctAnsw) {

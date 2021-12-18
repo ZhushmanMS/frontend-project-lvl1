@@ -9,7 +9,6 @@ const gcd = () => {
   const quest = `${randInt1} ${randInt2}`;
   const corrctAnsw = String(getCorrctAnsw(randInt1, randInt2));
   const QA = [quest, corrctAnsw];
-  console.log(QA);
   return QA;
 };
 
