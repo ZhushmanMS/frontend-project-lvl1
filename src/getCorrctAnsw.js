@@ -1,4 +1,4 @@
-const thisEven = (randInt) => {
+const isEven = (randInt) => {
   if (randInt % 2 === 0) {
     return 'yes';
   }
@@ -41,6 +41,15 @@ const getArr = (startInt, step, length) => {
   return arr;
 };
 
+const isPrime = (int) => {
+  const arrPrimeInt = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
+    41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97];
+  if (arrPrimeInt.includes(int)) {
+    return 'yes';
+  }
+  return 'no';
+};
+
 export {
-  thisEven, calc, getGCD, getArr,
+  isEven, calc, getGCD, getArr, isPrime,
 };
