@@ -1,4 +1,5 @@
 import getRandInt from '../utils/getRandInt.js';
+import { roundСount, engine } from '../engine.js';
 
 const isPrime = (int) => {
   const arrPrimeInt = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
@@ -9,14 +10,19 @@ const isPrime = (int) => {
   return 'no';
 };
 
-const gameRule = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.';
+const gameDescription = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.';
 
 const game = () => {
   const randInt = getRandInt(2, 100);
   const quest = randInt;
   const answer = isPrime(randInt);
-  const QA = [quest, answer];
-  return QA;
+  return [quest, answer];
 };
 
-export { gameRule, game };
+export default () => {
+  const rounds = [];
+  for (let i = 0; i < roundСount; i += 1) {
+    rounds.push(game());
+  }
+  return engine(gameDescription, rounds);
+};
