@@ -1,4 +1,5 @@
 import getRandInt from '../utils/getRandInt.js';
+import { roundСount, engine } from '../engine.js';
 
 const calc = (operator, x, y) => {
   switch (operator) {
@@ -19,7 +20,7 @@ const calc = (operator, x, y) => {
   }
 };
 
-const gameRule = 'What is the result of the expression? \nNOTE: round a rational number to the nearest tenth!';
+const gameDescription = 'What is the result of the expression? \nNOTE: round a rational number to the nearest tenth!';
 
 const game = () => {
   const arrOperts = ['+', '-', '*', '/', '%'];
@@ -30,8 +31,13 @@ const game = () => {
   const randOpert = arrOperts[Math.floor(Math.random() * arrOperts.length)];
   const quest = `${maxInt} ${randOpert} ${minInt}`;
   const answer = String(calc(randOpert, maxInt, minInt));
-  const QA = [quest, answer];
-  return QA;
+  return [quest, answer];
 };
 
-export { gameRule, game };
+export default () => {
+  const rounds = [];
+  for (let i = 0; i < roundСount; i += 1) {
+    rounds.push(game());
+  }
+  return engine(gameDescription, rounds);
+};
