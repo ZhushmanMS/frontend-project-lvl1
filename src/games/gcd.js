@@ -1,5 +1,4 @@
-import getRandInt from '../utils/getRandInt.js';
-import { roundСount, engine } from '../engine.js';
+import { getRandInt, generateRaundsData } from '../utils.js';
 
 const getGCD = (int1, int2) => {
   if (!int2) {
@@ -18,10 +17,4 @@ const game = () => {
   return [quest, answer];
 };
 
-export default () => {
-  const rounds = [];
-  for (let i = 0; i < roundСount; i += 1) {
-    rounds.push(game());
-  }
-  return engine(gameDescription, rounds);
-};
+export default () => generateRaundsData(gameDescription, game);

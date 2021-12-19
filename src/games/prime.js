@@ -1,5 +1,4 @@
-import getRandInt from '../utils/getRandInt.js';
-import { roundСount, engine } from '../engine.js';
+import { getRandInt, generateRaundsData } from '../utils.js';
 
 const isPrime = (int) => {
   const arrPrimeInts = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37,
@@ -19,10 +18,4 @@ const game = () => {
   return [quest, answer];
 };
 
-export default () => {
-  const rounds = [];
-  for (let i = 0; i < roundСount; i += 1) {
-    rounds.push(game());
-  }
-  return engine(gameDescription, rounds);
-};
+export default () => generateRaundsData(gameDescription, game);
