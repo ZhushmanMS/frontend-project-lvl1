@@ -1,27 +1,27 @@
 import getRandInt from '../utils/getRandInt.js';
 import { roundСount, engine } from '../engine.js';
 
-const getArr = (startInt, step, length) => {
-  const arr = [];
+const getProgression = (startInt, step, length) => {
+  const progression = [];
   let temp = startInt;
   for (let i = 0; i < length; i += 1) {
-    arr.push(temp);
+    progression.push(temp);
     temp += step;
   }
-  return arr;
+  return progression;
 };
 
 const gameDescription = 'What number is missing in the progression?';
 
 const game = () => {
-  const startIntArr = getRandInt(1, 10);
-  const stepArr = getRandInt(2, 10);
-  const lengthArr = getRandInt(5, 16);
-  const answerPosition = getRandInt(0, lengthArr - 1);
-  const gameArr = getArr(startIntArr, stepArr, lengthArr);
-  const answer = String(gameArr[answerPosition]);
-  gameArr[answerPosition] = '..';
-  const quest = gameArr.join(' ');
+  const startInt = getRandInt(1, 10);
+  const step = getRandInt(2, 10);
+  const length = getRandInt(5, 16);
+  const answerPosition = getRandInt(0, length - 1);
+  const gameProgression = getProgression(startInt, step, length);
+  const answer = String(gameProgression[answerPosition]);
+  gameProgression[answerPosition] = '..';
+  const quest = gameProgression.join(' ');
   return [quest, answer];
 };
 
