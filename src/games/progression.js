@@ -1,4 +1,5 @@
 import getRandInt from '../utils/getRandInt.js';
+import { roundСount, engine } from '../engine.js';
 
 const getArr = (startInt, step, length) => {
   const arr = [];
@@ -10,7 +11,7 @@ const getArr = (startInt, step, length) => {
   return arr;
 };
 
-const gameRule = 'What number is missing in the progression?';
+const gameDescription = 'What number is missing in the progression?';
 
 const game = () => {
   const startIntArr = getRandInt(1, 10);
@@ -21,8 +22,13 @@ const game = () => {
   const answer = String(gameArr[answerPosition]);
   gameArr[answerPosition] = '..';
   const quest = gameArr.join(' ');
-  const QA = [quest, answer];
-  return QA;
+  return [quest, answer];
 };
 
-export { gameRule, game };
+export default () => {
+  const rounds = [];
+  for (let i = 0; i < roundСount; i += 1) {
+    rounds.push(game());
+  }
+  return engine(gameDescription, rounds);
+};
