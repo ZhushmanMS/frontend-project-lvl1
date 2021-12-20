@@ -15,12 +15,12 @@ ____
 
 ## Prepare to play
 
-Clone repository
+Clone repository:
 ```sh
 git clone git@github.com:ZhushmanMS/frontend-project-lvl1.git
 ```
 
-Install game in your OS
+Install game in your OS:
 ```sh
 npm link
 ```
@@ -95,5 +95,5 @@ ____
 **Gameplay "Prime"**
 [![asciicast](https://asciinema.org/a/ZVjvzruYFHcqCw7n34VwaNYX9.png)](https://asciinema.org/a/ZVjvzruYFHcqCw7n34VwaNYX9)
 
-[To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
+[To choice of game!](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
 ____
