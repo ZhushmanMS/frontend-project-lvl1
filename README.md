@@ -6,10 +6,12 @@
 ____
 
 
+
 ## Description
 
 "Brain Games" is a set of console games for brain pumping. Each game asks questions to which you must give the correct answers. After three correct answers, the game is considered completed. Incorrect answers end the game and prompt you to go through it again.
 ____
+
 
 
 ## Prepare to play
@@ -23,6 +25,7 @@ Install game in your OS:
 npm link
 ```
 ____
+
 
 
 ## Games
@@ -40,21 +43,25 @@ brain-calc
 brain-progression
 ```
 **Even**: Determining an even number.
+
 Сommand to start game:
 ```sh
 brain-even
 ```
 **GCD**: Determining the greatest common divisor.
+
 Сommand to start game:
 ```sh
 brain-gcd
 ```
 **Prime**: Determining a prime number.
+
 Сommand to start game:
 ```sh
 brain-prime
 ```
 ____
+
 
 
 ## How to play
@@ -65,32 +72,25 @@ Enter сommand to start in console.
 ____
 
 
+
 ### Gameplay "Calculator"
 
-[![asciicast](https://asciinema.org/a/QwVy4xb6u3La8ucpQnIX3Htwi.png)](https://asciinema.org/a/QwVy4xb6u3La8ucpQnIX3Htwi)
-
-[To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
+[![asciicast](https://asciinema.org/a/4lH5GUfQANPbqL7XUhQmGwmW7.png)](https://asciinema.org/a/4lH5GUfQANPbqL7XUhQmGwmW7)
 
 
 ### Gameplay "Progression"
 
 [![asciicast](https://asciinema.org/a/3pFurat868v9tAx4W3FlOQiL7.png)](https://asciinema.org/a/3pFurat868v9tAx4W3FlOQiL7)
 
-[To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
-
 
 ### Gameplay "Even"
 
 [![asciicast](https://asciinema.org/a/82ltZNC58AGOXOrpEKsnHmWoH.png)](https://asciinema.org/a/82ltZNC58AGOXOrpEKsnHmWoH)
 
-[To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
-
 
 ### Gameplay "GCD"
 
 [![asciicast](https://asciinema.org/a/7eDfxd3wRPn0eQADMQVTM2G49.png)](https://asciinema.org/a/7eDfxd3wRPn0eQADMQVTM2G49)
-
-[To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
 
 
 ### Gameplay "Prime"
