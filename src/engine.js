@@ -6,8 +6,8 @@ const roundСount = 3;
 const engine = (gameDescription, rounds) => {
   console.log(gameDescription);
   for (let i = 0; i < roundСount; i += 1) {
-    const [quest, correctAnswer] = rounds[i];
-    console.log(`Question: ${quest}`);
+    const [question, correctAnswer] = rounds[i];
+    console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer === correctAnswer) {
       console.log('Correct!');

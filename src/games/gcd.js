@@ -1,4 +1,4 @@
-import { getRandInt, generateRaundsData } from '../utils.js';
+import { getRandomInt, generateRoundsData } from '../utils.js';
 
 const getGCD = (int1, int2) => {
   if (!int2) {
@@ -10,11 +10,11 @@ const getGCD = (int1, int2) => {
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const game = () => {
-  const randInt1 = getRandInt(3, 100);
-  const randInt2 = getRandInt(3, 100);
-  const quest = `${randInt1} ${randInt2}`;
-  const answer = String(getGCD(randInt1, randInt2));
-  return [quest, answer];
+  const randomInt1 = getRandomInt(3, 100);
+  const randomInt2 = getRandomInt(3, 100);
+  const question = `${randomInt1} ${randomInt2}`;
+  const answer = String(getGCD(randomInt1, randomInt2));
+  return [question, answer];
 };
 
-export default () => generateRaundsData(gameDescription, game);
+export default () => generateRoundsData(gameDescription, game);

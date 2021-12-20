@@ -1,4 +1,4 @@
-import { getRandInt, generateRaundsData } from '../utils.js';
+import { getRandomInt, generateRoundsData } from '../utils.js';
 
 const getProgression = (startInt, step, length) => {
   const progression = [];
@@ -13,15 +13,15 @@ const getProgression = (startInt, step, length) => {
 const gameDescription = 'What number is missing in the progression?';
 
 const game = () => {
-  const startInt = getRandInt(1, 10);
-  const step = getRandInt(2, 10);
-  const length = getRandInt(5, 16);
-  const answerPosition = getRandInt(0, length - 1);
+  const startInt = getRandomInt(1, 10);
+  const step = getRandomInt(2, 10);
+  const length = getRandomInt(5, 16);
+  const answerPosition = getRandomInt(0, length - 1);
   const gameProgression = getProgression(startInt, step, length);
   const answer = String(gameProgression[answerPosition]);
   gameProgression[answerPosition] = '..';
-  const quest = gameProgression.join(' ');
-  return [quest, answer];
+  const question = gameProgression.join(' ');
+  return [question, answer];
 };
 
-export default () => generateRaundsData(gameDescription, game);
+export default () => generateRoundsData(gameDescription, game);
