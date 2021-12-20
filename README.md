@@ -2,8 +2,7 @@
 [![linter check](https://github.com/ZhushmanMS/frontend-project-lvl1/actions/workflows/linter-check.yml/badge.svg)](https://github.com/ZhushmanMS/frontend-project-lvl1/actions/workflows/linter-check.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e8c6683c98158ab4c0b5/maintainability)](https://codeclimate.com/github/ZhushmanMS/frontend-project-lvl1/maintainability)
 
-# Welcom to Brain Game!
-____
+# Welcome to Brain Game!
 
 
 
@@ -16,11 +15,12 @@ ____
 
 ## Prepare to play
 
-Clone repository:
+Clone repository
 ```sh
 git clone git@github.com:ZhushmanMS/frontend-project-lvl1.git
 ```
-Install game in your OS:
+
+Install game in your OS
 ```sh
 npm link
 ```
@@ -66,39 +66,34 @@ ____
 
 ## How to play
 
-[Clone and install game.](https://github.com/ZhushmanMS/frontend-project-lvl1#prepare-to-play)
+[Clone and install](https://github.com/ZhushmanMS/frontend-project-lvl1#prepare-to-play) game.
 
-Enter сommand to start in console.
+Enter command to run in console and enjoy game!
 ____
 
 
 
-### Gameplay "Calculator"
+## Gameplay
 
+
+**Gameplay "Calculator"**
 [![asciicast](https://asciinema.org/a/4lH5GUfQANPbqL7XUhQmGwmW7.png)](https://asciinema.org/a/4lH5GUfQANPbqL7XUhQmGwmW7)
 
 
-### Gameplay "Progression"
-
+**Gameplay "Progression"**
 [![asciicast](https://asciinema.org/a/3pFurat868v9tAx4W3FlOQiL7.png)](https://asciinema.org/a/3pFurat868v9tAx4W3FlOQiL7)
 
 
-### Gameplay "Even"
-
+**Gameplay "Even"**
 [![asciicast](https://asciinema.org/a/82ltZNC58AGOXOrpEKsnHmWoH.png)](https://asciinema.org/a/82ltZNC58AGOXOrpEKsnHmWoH)
 
 
-### Gameplay "GCD"
-
+**Gameplay "GCD"**
 [![asciicast](https://asciinema.org/a/7eDfxd3wRPn0eQADMQVTM2G49.png)](https://asciinema.org/a/7eDfxd3wRPn0eQADMQVTM2G49)
 
 
-### Gameplay "Prime"
-
+**Gameplay "Prime"**
 [![asciicast](https://asciinema.org/a/ZVjvzruYFHcqCw7n34VwaNYX9.png)](https://asciinema.org/a/ZVjvzruYFHcqCw7n34VwaNYX9)
 
 [To choice of game](https://github.com/ZhushmanMS/frontend-project-lvl1#games)
 ____
-
-
-# Enjoy playing!
