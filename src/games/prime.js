@@ -1,4 +1,5 @@
 import { getRandomInt, generateRoundsData } from '../utils.js';
+import { engine } from '../engine.js';
 
 const isPrime = (int) => {
   if (int < 2) {
@@ -21,4 +22,4 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => generateRoundsData(gameDescription, game);
+export default () => engine(gameDescription, generateRoundsData(game));

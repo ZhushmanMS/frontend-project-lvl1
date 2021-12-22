@@ -1,4 +1,5 @@
 import { getRandomInt, generateRoundsData } from '../utils.js';
+import { engine } from '../engine.js';
 
 const getGCD = (int1, int2) => {
   if (!int2) {
@@ -17,4 +18,4 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => generateRoundsData(gameDescription, game);
+export default () => engine(gameDescription, generateRoundsData(game));

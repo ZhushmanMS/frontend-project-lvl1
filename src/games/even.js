@@ -1,4 +1,5 @@
 import { getRandomInt, generateRoundsData } from '../utils.js';
+import { engine } from '../engine.js';
 
 const isEven = (int) => {
   if (int % 2 === 0) {
@@ -16,4 +17,4 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => generateRoundsData(gameDescription, game);
+export default () => engine(gameDescription, generateRoundsData(game));

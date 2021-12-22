@@ -1,4 +1,5 @@
 import { getRandomInt, generateRoundsData } from '../utils.js';
+import { engine } from '../engine.js';
 
 const getProgression = (startInt, step, length) => {
   const progression = [];
@@ -24,4 +25,4 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => generateRoundsData(gameDescription, game);
+export default () => engine(gameDescription, generateRoundsData(game));
