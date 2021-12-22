@@ -19,9 +19,9 @@ const operators = ['+', '-', '*'];
 const gameDescription = 'What is the result of the expression?';
 
 const game = () => {
-  const randomInt1 = getRandomInt(2, 30);
-  const randomInt2 = getRandomInt(2, 10);
-  const randomOperator = operators[getRandomInt(0, 3)];
+  const randomInt1 = getRandomInt(2, 29);
+  const randomInt2 = getRandomInt(2, 9);
+  const randomOperator = operators[getRandomInt(0, operators.length - 1)];
   const question = `${randomInt1} ${randomOperator} ${randomInt2}`;
   const answer = String(calc(randomOperator, randomInt1, randomInt2));
   return [question, answer];

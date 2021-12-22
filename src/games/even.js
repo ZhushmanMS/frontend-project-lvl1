@@ -11,7 +11,7 @@ const isEven = (int) => {
 const gameDescription = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
 
 const game = () => {
-  const randomInt = getRandomInt(1, 100);
+  const randomInt = getRandomInt(1, 99);
   const question = randomInt;
   const answer = isEven(randomInt);
   return [question, answer];

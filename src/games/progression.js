@@ -14,9 +14,9 @@ const getProgression = (startInt, step, length) => {
 const gameDescription = 'What number is missing in the progression?';
 
 const game = () => {
-  const startInt = getRandomInt(1, 10);
-  const step = getRandomInt(2, 10);
-  const length = getRandomInt(5, 16);
+  const startInt = getRandomInt(1, 9);
+  const step = getRandomInt(2, 9);
+  const length = getRandomInt(5, 15);
   const answerPosition = getRandomInt(0, length - 1);
   const gameProgression = getProgression(startInt, step, length);
   const answer = String(gameProgression[answerPosition]);
