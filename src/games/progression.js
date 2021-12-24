@@ -1,5 +1,5 @@
-import { getRandomInt, generateRoundsData } from '../utils.js';
-import { engine } from '../engine.js';
+import getRandomInt from '../utils.js';
+import { roundСount, engine } from '../engine.js';
 
 const getProgression = (startInt, step, length) => {
   const progression = [];
@@ -13,7 +13,7 @@ const getProgression = (startInt, step, length) => {
 
 const gameDescription = 'What number is missing in the progression?';
 
-const game = () => {
+const generateRound = () => {
   const startInt = getRandomInt(1, 9);
   const step = getRandomInt(2, 9);
   const length = getRandomInt(5, 15);
@@ -25,4 +25,10 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => engine(gameDescription, generateRoundsData(game));
+export default () => {
+  const rounds = [];
+  for (let i = 0; i < roundСount; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return engine(gameDescription, rounds);
+};

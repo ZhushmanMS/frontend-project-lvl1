@@ -1,5 +1,5 @@
-import { getRandomInt, generateRoundsData } from '../utils.js';
-import { engine } from '../engine.js';
+import getRandomInt from '../utils.js';
+import { roundСount, engine } from '../engine.js';
 
 const calc = (operator, x, y) => {
   switch (operator) {
@@ -18,7 +18,7 @@ const operators = ['+', '-', '*'];
 
 const gameDescription = 'What is the result of the expression?';
 
-const game = () => {
+const generateRound = () => {
   const randomInt1 = getRandomInt(2, 29);
   const randomInt2 = getRandomInt(2, 9);
   const randomOperator = operators[getRandomInt(0, operators.length - 1)];
@@ -27,4 +27,10 @@ const game = () => {
   return [question, answer];
 };
 
-export default () => engine(gameDescription, generateRoundsData(game));
+export default () => {
+  const rounds = [];
+  for (let i = 0; i < roundСount; i += 1) {
+    rounds[i] = generateRound();
+  }
+  return engine(gameDescription, rounds);
+};
