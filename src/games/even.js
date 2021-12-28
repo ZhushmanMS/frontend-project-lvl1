@@ -3,9 +3,9 @@ import { roundСount, engine } from '../engine.js';
 
 const isEven = (int) => {
   if (int % 2 === 0) {
-    return 'yes';
+    return true;
   }
-  return 'no';
+  return false;
 };
 
 const gameDescription = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
@@ -13,7 +13,7 @@ const gameDescription = 'Answer \'yes\' if the number is even, otherwise answer 
 const generateRound = () => {
   const randomInt = getRandomInt(1, 99);
   const question = randomInt;
-  const answer = isEven(randomInt);
+  const answer = isEven(randomInt) ? 'yes' : 'no';
   return [question, answer];
 };
 

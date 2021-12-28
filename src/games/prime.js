@@ -3,14 +3,14 @@ import { roundСount, engine } from '../engine.js';
 
 const isPrime = (int) => {
   if (int < 2) {
-    return 'no';
+    return false;
   }
   for (let i = 2; i <= int / 2; i += 1) {
     if (int % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
 
 const gameDescription = 'Answer \'yes\' if given number is prime. Otherwise answer \'no\'.';
@@ -18,7 +18,7 @@ const gameDescription = 'Answer \'yes\' if given number is prime. Otherwise answ
 const generateRound = () => {
   const randomInt = getRandomInt(2, 99);
   const question = randomInt;
-  const answer = isPrime(randomInt);
+  const answer = isPrime(randomInt) ? 'yes' : 'no';
   return [question, answer];
 };
 
