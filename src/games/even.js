@@ -1,12 +1,7 @@
 import getRandomInt from '../utils.js';
-import { roundСount, engine } from '../engine.js';
+import { roundsСount, engine } from '../engine.js';
 
-const isEven = (int) => {
-  if (int % 2 === 0) {
-    return true;
-  }
-  return false;
-};
+const isEven = (int) => int % 2 === 0;
 
 const gameDescription = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
 
@@ -19,7 +14,7 @@ const generateRound = () => {
 
 export default () => {
   const rounds = [];
-  for (let i = 0; i < roundСount; i += 1) {
+  for (let i = 0; i < roundsСount; i += 1) {
     rounds[i] = generateRound();
   }
   return engine(gameDescription, rounds);

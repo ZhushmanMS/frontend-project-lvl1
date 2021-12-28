@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync';
 import userName from './cli.js';
 
-const roundСount = 3;
+const roundsСount = 3;
 
 const engine = (gameDescription, rounds) => {
   console.log(gameDescription);
-  for (let i = 0; i < roundСount; i += 1) {
+  for (let i = 0; i < roundsСount; i += 1) {
     const [question, correctAnswer] = rounds[i];
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
@@ -19,4 +19,4 @@ const engine = (gameDescription, rounds) => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-export { roundСount, engine };
+export { roundsСount, engine };

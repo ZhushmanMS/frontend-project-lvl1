@@ -1,5 +1,5 @@
 import getRandomInt from '../utils.js';
-import { roundСount, engine } from '../engine.js';
+import { roundsСount, engine } from '../engine.js';
 
 const getGCD = (int1, int2) => {
   if (!int2) {
@@ -20,7 +20,7 @@ const generateRound = () => {
 
 export default () => {
   const rounds = [];
-  for (let i = 0; i < roundСount; i += 1) {
+  for (let i = 0; i < roundsСount; i += 1) {
     rounds[i] = generateRound();
   }
   return engine(gameDescription, rounds);
